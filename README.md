@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# Aplicação de Cronômetro Pomodoro com React e TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma aplicação de cronômetro Pomodoro desenvolvida usando React, TypeScript, Styled Components, Context e Reducers. O projeto foi criado com Vite.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cronômetro Pomodoro: Permite alternar entre sessões de trabalho de 25 minutos e intervalos de 5 minutos para descanso.
+- Contador de ciclos: Acompanhe o número de ciclos Pomodoro que você completou.
+- Personalização: Inicie, pause e reinicie o cronômetro, além de poder personalizar as durações das sessões de trabalho e intervalo.
+- Interface Responsiva: A aplicação é projetada para oferecer uma experiência consistente em dispositivos móveis e desktops.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: Biblioteca JavaScript para construção de interfaces de usuário.
+- TypeScript: Adiciona tipagem estática ao JavaScript, melhorando a qualidade do código.
+- Styled Components: Biblioteca para escrever estilos com componentes JavaScript.
+- Context API: Para gerenciamento de estado compartilhado entre componentes.
+- Reducers: Para gerenciar a lógica de estado de forma previsível.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Certifique-se de ter o Node.js instalado em sua máquina. Clone este repositório e, no terminal, siga as instruções abaixo:
+
+1. Instale as dependências:
+
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+2. Inicie o servidor de desenvolvimento:
+
+```
+npm run dev
+```
+
+
+Acesse a aplicação na em seu navegador em localhost:5173
